@@ -1,0 +1,15 @@
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\bin\Debug\TestWPFCS.exe.config
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\bin\Debug\TestWPFCS.exe
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\bin\Debug\TestWPFCS.pdb
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.csproj.AssemblyReference.cache
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\MainWindow.g.cs
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\App.g.cs
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS_MarkupCompile.cache
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS_MarkupCompile.lref
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\MainWindow.baml
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.g.resources
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.Properties.Resources.resources
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.csproj.GenerateResource.cache
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.csproj.CoreCompileInputs.cache
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.exe
+D:\File\GitHub\TestWPFCS\TestWPFCS\TestWPFCS\obj\Debug\TestWPFCS.pdb

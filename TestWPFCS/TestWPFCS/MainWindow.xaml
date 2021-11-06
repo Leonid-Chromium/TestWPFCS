@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:TestWPFCS"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid  Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <ToolBar Header="Команды">
+                <Button x:Name="InsertButton" Content="Insert" Click="InsertButton_Click"/>
+                <Button x:Name="SelectButton" Content="Select" Click="SelectButton_Click"/>
+                <Button x:Name="DeleteButton" Content="Delete" Click="DeleteButton_Click"/>
+                <Button x:Name="UpdateButton" Content="Update" Click="UpdateButton_Click"/>
+                <TextBox x:Name="IDTextBox" MinWidth="45" Text="12"/>
+                <TextBox x:Name="NameTextBox" MinWidth="45" Text="Name"/>
+            </ToolBar>
+            <DataGrid x:Name="TestDG">
+            </DataGrid>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <ToolBar Header="Артём, пососи" HorizontalAlignment="Left" Width="396">
+                <ToggleButton x:Name="GreenButton" Background="Green" Click="GreenButton_Click"/>
+                <ToggleButton x:Name="RedButton" Background="Red" Click="RedButton_Click"/>
+            </ToolBar>
+            <StackPanel>
+                <Rectangle x:Name="GreenRectangle" MinHeight="150" MinWidth="150" Fill="Green"/>
+                <Rectangle x:Name="RedRectangle" MinHeight="150" MinWidth="150" Fill="Red"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
