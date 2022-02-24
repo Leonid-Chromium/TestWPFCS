@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading;
+using System.Diagnostics;
 
 namespace TestWPFCS
 {
@@ -26,10 +28,46 @@ namespace TestWPFCS
 
         private SqlDataAdapter adapter = null;
 
+        public static void fun()
+        {
+            ThreadTestClass.fun1(99999);
+            ThreadTestClass.fun1(999999);
+            ThreadTestClass.fun1(9999999);
+            ThreadTestClass.fun1(99999999);
+            ThreadTestClass.fun1(999999999);
+        }
+
         public MainWindow()
         {
             InitializeComponent();
-    }
+
+            DateTime dateTime1 = new DateTime();
+            DateTime dateTime2 = new DateTime();
+
+            dateTime1 = DateTime.Now;
+
+            fun();
+
+            dateTime2 = DateTime.Now;
+            Trace.WriteLine(String.Format("Затраченое общее время без многопоточности = " + dateTime2.Subtract(dateTime1)));
+
+            Thread tread1 = new Thread(() => ThreadTestClass.fun1(99999));
+            Thread tread2 = new Thread(() => ThreadTestClass.fun1(999999));
+            Thread tread3 = new Thread(() => ThreadTestClass.fun1(9999999));
+            Thread tread4 = new Thread(() => ThreadTestClass.fun1(99999999));
+            Thread tread5 = new Thread(() => ThreadTestClass.fun1(999999999));
+
+            dateTime1 = DateTime.Now;
+
+            tread1.Start();
+            tread2.Start();
+            tread3.Start();
+            tread4.Start();
+            tread5.Start();
+
+            dateTime2 = DateTime.Now;
+            Trace.WriteLine(String.Format("Затраченое общее время с многопоточностью = " + dateTime2.Subtract(dateTime1)));
+        }
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
